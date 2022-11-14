@@ -4,16 +4,18 @@ document.querySelector("form").addEventListener("submit", async (e) => {
   e.preventDefault();
   const button = e.target.querySelector("button");
 
-  const name = document.getElementById("name").value.toString();
+  const app_principal = document.getElementById("app_principal").value.toString();
+  const app_account = document.getElementById("app_account").value.toString();
+  const nns_principal = document.getElementById("nns_principal").value.toString();
 
   button.setAttribute("disabled", true);
 
   // Interact with foo actor, calling the greet method
-  const greeting = await form_backend.greet(name);
+  const response = await form_backend.create({app_principal, app_account, nns_principal});
 
   button.removeAttribute("disabled");
 
-  document.getElementById("greeting").innerText = greeting;
+  document.getElementById("response").innerText = response;
 
   return false;
 });
