@@ -1,0 +1,23 @@
+type FormRecord = record {
+    "app_principal": opt principal;
+    "app_account": opt text;
+    "nns_principal": principal;
+};
+
+type AppErr = 
+    variant {
+        Unauthenticated;
+        Other;
+};
+
+type UpdateReceipt = 
+ variant {
+   Err: AppErr;
+   Ok: nat64;
+ };
+
+service : {
+    "getAll": () -> (vec FormRecord) query;
+    "create": (FormRecord) -> (UpdateReceipt);
+    "add_reader": (principal) -> ();
+}
