@@ -10,11 +10,10 @@
         "form_backend"
       ],
       "frontend": {
-        "entrypoint": "src/form_frontend/src/index.html"
+        "entrypoint": "src/form_frontend/index.html"
       },
       "source": [
-        "src/form_frontend/assets",
-        "dist/form_frontend/"
+        "src/form_frontend/dist"
       ],
       "type": "assets"
     }
