@@ -61,7 +61,7 @@
   <div class="form-control w-full mb-6">
     <div class="label">
       <label class="label-text" for="distrikt-principal"
-        >Enter your Distrikt principal</label
+        >Enter your distrikt principal</label
       >
       <label
         class="label-text underline cursor-pointer hover:text-white"
@@ -70,7 +70,7 @@
     </div>
     <PrincipalField
       bind:value={distriktPrincipal}
-      placeholder="Distrikt principal"
+      placeholder="distrikt principal"
       id="distrikt-principal"
     />
   </div>
