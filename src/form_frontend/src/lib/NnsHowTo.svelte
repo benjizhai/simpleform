@@ -10,29 +10,13 @@
       class="btn btn-sm btn-circle absolute right-2 top-2">✕</label
     >
     <h3 class="text-lg font-bold text-white">How to find your NNS principal</h3>
-    <p class="py-4">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam esse
-      veritatis rerum iure omnis similique aperiam! Praesentium sint, maxime
-      possimus, est recusandae labore amet, laudantium perspiciatis odio
-      repudiandae delectus itaque.
-    </p>
-    <p class="py-4">
-      <img src={img1} alt="" />
-    </p>
-    <p class="py-4">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam esse
-      veritatis rerum iure omnis similique aperiam! Praesentium sint, maxime
-      possimus, est recusandae labore amet, laudantium perspiciatis odio
-      repudiandae delectus itaque.
-    </p>
+    <ol class="list-decimal ml-6 mt-4">
+      <li>Go to <a href="https://nns.ic0.app/" target="_blank" rel="noreferrer"><u>https://nns.ic0.app/</u></a></li>
+      <li>Click on "Neurons"</li>
+      <li>Copy your principal id highlighted in red</li>
+    </ol>
     <p class="py-4">
       <img src={img1} alt="" />
-    </p>
-    <p class="py-4">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam esse
-      veritatis rerum iure omnis similique aperiam! Praesentium sint, maxime
-      possimus, est recusandae labore amet, laudantium perspiciatis odio
-      repudiandae delectus itaque.
     </p>
   </label>
 </label>
